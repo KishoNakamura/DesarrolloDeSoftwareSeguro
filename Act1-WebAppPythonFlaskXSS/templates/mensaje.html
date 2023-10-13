@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Seguro | 2076315</title>
+    <style>
+        .formulario {
+            border: 1px solid gray;
+            padding: 16px;
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formulario h1 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .formulario input {
+            display: block;
+            font-size: 14px;
+            width: 100%;
+            border: 1px solid gray;
+        }
+
+        .formulario input[type='submit'] {
+            margin-top: 35px;
+            background-color: ghostwhite;
+            font-weight: 900;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://127.0.0.1:5000/mensaje_seguro" method="post" class="formulario">
+        <h1>Envio seguro de mensajes</h1>
+        <input type="text" name="mensaje" id="mensaje">
+        <input type="submit" value="Enviar Formulario">
+    </form>
+</body>
+</html>

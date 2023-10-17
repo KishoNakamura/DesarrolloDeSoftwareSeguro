@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSRF Prevention Lab</title>
+</head>
+<body>
+    <h1>CSRF Prevention Lab</h1>
+    <p>Tu sualdo actual es: {{session.balance}}</p>
+    <form method="POST">
+        {{form.csrf_token}}
+        <label for="amount">Cantidad a transferir:</label>
+        {{form.amount}}
+        {{form.submit}}
+    </form>
+</body>
+</html>
